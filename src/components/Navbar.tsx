@@ -1,10 +1,6 @@
 import Image from "next/image";
-
-import search from '../../public/icons/search.svg'
-import message from '../../public/icons/message.png'
-import announcement from '../../public/icons/announcement.png'
-import avatar from '../../public/icons/avatar.png'
 import { wh_avatar, wh_menu, wh_search } from "@/constant";
+import { announcements, avatar, messages, search } from "@/constant/icons";
 
 export const Navbar = () => {
   return (
@@ -15,10 +11,10 @@ export const Navbar = () => {
       </div>
       <div className="flex items-center gap-6 justify-end w-full">
         <div className="bg-white rounded-full w-7 h-7 flex items-center justify-center">
-          <Image src={message} alt="message" width={wh_menu} height={wh_menu}/>
+          <Image src={messages} alt="message" width={wh_menu} height={wh_menu}/>
         </div>
         <div className="bg-white rounded-full w-7 h-7 flex items-center justify-center relative">
-          <Image src={announcement} alt="announcement" width={wh_menu} height={wh_menu}/>
+          <Image src={announcements} alt="announcement" width={wh_menu} height={wh_menu}/>
           <div className="absolute -top-3 -right-3 w-5 h-5 flex items-center justify-center bg-purple-500 text-white rounded-full text-xs">1</div>
         </div>
         <div className="flex flex-col">

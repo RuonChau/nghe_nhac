@@ -1,7 +1,7 @@
 
 
 import Image from 'next/image';
-import more from '../../public/icons/more.svg'
+import more from '../../public/icons/more-horizontal.svg'
 import { wh_menu } from '@/constant';
 
 const UserCard = ({type, date, quantity}:UserCards) => {
